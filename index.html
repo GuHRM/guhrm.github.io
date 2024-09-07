@@ -9,8 +9,9 @@
     <script>
         $('body').terminal({
             help: function() {
-                this.echo('Pelo visto você precisa de ajuda.\nAqui vão alguns comandos que podem te ajudar:');
-            },            
+                this.echo('Pelo visto você precisa de ajuda. Aqui vão alguns comandos que podem te ajudar:');
+            },
+            ajuda:help,
         }, {
             greetings: 'Bem vindo ao meu curriculo, o que deseja?'
         });
