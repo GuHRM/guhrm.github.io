@@ -8,12 +8,14 @@
 <body>
     <script>
         $('body').terminal({
-            hello: function(what) {
-                this.echo('Hello, ' + what +
-                          '. Wellcome to this terminal.');
-            }
+            help: function() {
+                this.echo('Pelo visto você precisa de ajuda.\n' +
+                +'Aqui vão alguns comandos que podem te ajudar:');
+            },
+            ajuda: help,
+            
         }, {
-            greetings: 'My First Web Terminal'
+            greetings: 'Bem vindo ao meu curriculo, o que deseja?'
         });
         </script>
 </body>
